@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+
+
+  </head>
+  <body>
+    <main>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Me question You</p>
+        <form id="survey-form">
+            <label id="name-label" name="name">Name<input type="text" id="name"  placeholder="Name" required></input></label>  
+            <label id="email-label" name="email">Email<input type="email" id="email"  placeholder="email" required></input></label>  
+            <label id="number-label" name="number">Number<input type="number" id="number"  min="10" max="100" placeholder="number" required></input></label>
+            <label for="dropdown-label">Do you like desserts?</label>
+            <select name="Desserts" id="dropdown">
+              <option value="select">Select</option>
+              <option value="cake">Cake</option>
+              <option value="flan">Flan</option>
+            </select> 
+            <fieldset>
+              <legend>Have you ever written any code?</legend>
+              <label ><input type="radio" name="Yes" value="yes"  > Yes </input></label>
+              <label><input type="radio" value="no" name="No"  > No </input></label>
+            </fieldset>
+            <fieldset>
+              <legend>Do you feel more comfortable coding?</legend>
+              <label ><input type="radio" name="Yes" value="yes"  > Yes </input></label>
+              <label><input type="radio" value="no" name="No"  > No </input></label>
+            </fieldset>
+
+            <fieldset>
+              <legend>What device are you working on?</legend>
+               <input type="checkbox" id="device1" name="device1" value="PC">
+                  <label for="device1"> I have a PC</label><br>
+                  <input type="checkbox" id="device2" name="device2" value="Laptop">
+                  <label for="device2"> I have a laptop</label><br>
+                  <input type="checkbox" id="device3" name="device3" value="Cardboard Box">
+                  <label for="device3"> I have a Cardboard Box</label><br> 
+            </fieldset>
+             <label for="text-box">Honest opinions of turtles:</label>
+              <textarea placeholder="what do you think about turtles?" id="turtle-opinion" name="opinions" rows="4" cols="100" ></textarea> 
+        <input type="submit" id="submit">     
+        </form>  
+        
+    </main>
+  </body>
+</html>
